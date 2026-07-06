@@ -29,7 +29,7 @@ Install a specific release:
 
 ```bash
 curl -fsSL https://github.com/synergy-network-hq/synergy-sts-cli-releases/releases/latest/download/install-synergy-sts.sh \
-  | bash -s -- --version synergy-sts-v15.0.6-alpha.1
+  | bash -s -- --version synergy-sts-v15.0.10
 ```
 
 Verify the install:
@@ -52,6 +52,9 @@ Each release publishes:
 - `latest.json` release metadata
 
 The installer verifies release checksums by default.
+
+Supported installer platforms are macOS and Linux on `amd64` and `arm64`.
+Windows is not published from this release repository yet.
 
 ## Token Address Rule
 
