@@ -62,10 +62,3 @@ Native `SNRG` does not have a token address. Compatibility surfaces that require
 ```
 
 All non-native STS tokens have deterministic Synergy token addresses, such as `synb...` for fungible tokens.
-
-## Source
-
-The CLI source lives in the Synergy testnet repository:
-
-https://github.com/synergy-network-hq/testnet
-
