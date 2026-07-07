@@ -29,7 +29,7 @@ Install a specific release:
 
 ```bash
 curl -fsSL https://github.com/synergy-network-hq/synergy-sts-cli-releases/releases/latest/download/install-synergy-sts.sh \
-  | bash -s -- --version synergy-sts-v15.0.13
+  | bash -s -- --version synergy-sts-v15.0.14
 ```
 
 Verify the install:
@@ -56,7 +56,28 @@ The installer verifies release checksums by default.
 Supported installer platforms are macOS and Linux on `amd64` and `arm64`.
 Windows is not published from this release repository yet.
 
-`synergy-sts-v15.0.13` is the first expanded STS CLI release with native fungible, NFT, multi-asset, credential, and chain-1264 metadata/image payload support.
+`synergy-sts-v15.0.14` adds wallet-signed on-chain STS submission through `synergy_sendTransaction`, native SNRG fee payment, and the expanded native fungible, NFT, multi-asset, credential, chain-1264 metadata/image payload surface.
+
+Submit examples:
+
+```bash
+synergy-sts token create \
+  --network testnet \
+  --class b1 \
+  --name "Example Token" \
+  --symbol EXAMPLE \
+  --decimals 9 \
+  --initial-supply 1000000000 \
+  --max-supply 1000000000 \
+  --submit \
+  --wallet ./wallet.dec.json
+```
+
+Saved payloads can be submitted with:
+
+```bash
+synergy-sts submit --file ./token-create.json --wallet ./wallet.dec.json
+```
 
 ## Token Address Rule
 
