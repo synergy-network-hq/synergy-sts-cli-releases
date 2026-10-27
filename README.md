@@ -8,6 +8,12 @@ Public binary releases for `synergy-sts`, the command-line interface for the Syn
 
 The CLI builds deterministic STS payloads for review, estimates their gas and fees, signs typed ML-DSA-87 Aegis transaction envelopes, submits them through the native Chain 1266 ingress, and verifies finalized receipts. Token-creation submissions also verify the expected deterministic token ID in finalized STS state before reporting success.
 
+## Creator Guide
+
+[Download the Synergy STS Testnet Creator Guide (PDF)](https://github.com/synergy-network-hq/synergy-sts-cli-releases/releases/download/synergy-sts-v20.0.0/Testnet_Tokens_Creator_Guide.pdf)
+
+This 48-page guide covers Testnet-v3 setup, payload preview and fee estimation, token and NFT creation, signed submission, finalized-state verification, troubleshooting, and the complete v20 command and option reference.
+
 ## Install
 
 ### macOS and Linux
@@ -64,6 +70,7 @@ The `synergy-sts-v20.0.0` release contains:
 
 - `install-synergy-sts.sh`
 - `RELEASE_NOTES.md`
+- `Testnet_Tokens_Creator_Guide.pdf`
 - `synergy-sts-linux-amd64`
 - `synergy-sts-linux-amd64.sha256`
 - `synergy-sts-linux-arm64`
